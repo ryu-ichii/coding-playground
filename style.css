@@ -7,8 +7,8 @@ body {
   margin: 2em;
   background: #cbf1e4;
   background-image: linear-gradient(
-    blue,
-    green,
+    rgb(0, 229, 255),
+    rgb(13, 0, 128),
     #cbf1e4
   ); /* change the background colour here - you can specify a solid colour, a gradiant or an image - you can find HEX codes for colours at https://htmlcolorcodes.com/ */
   background-image: cover;
@@ -26,7 +26,7 @@ h2 {
 }
 
 /* header for error code Retry */
-h3 {
+h3 {z
   font: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: black;
   text-align: center;
