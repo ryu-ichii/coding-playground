@@ -156,15 +156,15 @@ textInput.addEventListener("input", changeText);
 //start of code for poem
 
 const subjects =
-    "robots, pilgrims, broken families, displaced animals, right-wing militants, cyborgs".split(
+    "splinters of glass,dust,Kevin,resentful faces,damp socks,a real ninja,a bloated truckie, ".split(
       ","
     ),
   verbs =
-    "wander,search, cross, kneel to pray in, avoid, survey, sneak across, hide in".split(
+    "ambles,yell obscenities,draws,fumbles in shame,injects,floats over,rolls in,spits on,".split(
       ","
     ),
   objects =
-    "the barren plains,the wilted grasslands, vast wastelands,wildernesses unknown,languishing caravan parks, arid deserts, military bunkers, valleys of ash and bone".split(
+    "the Ezymart,the crowd of students,the barramundi,dignity,an urban hellscape,the swamp of reflection,adrenochrome, the toxicly positive therapist".split(
       ","
     );
 // set up the counter
