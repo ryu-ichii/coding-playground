@@ -14,6 +14,16 @@ body {
   background-image: cover;
 }
 
+h1 {
+  font-family: "Sixtyfour", sans-serif
+  text-shadow: 1px 1px white;
+  font-size: 30px;
+  font-style: normal;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
+}
+
 /* font used for dropdown menu - edit this*/
 h2 {
   font-family: "Google Sans Code", cursive;
