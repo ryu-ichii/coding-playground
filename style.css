@@ -16,13 +16,13 @@ body {
 }
 
 h1 {
-  font-family: "Sixtyfour", sans-serif;
+  font-family: "Noto", sans-serif;
   text-shadow: 1px 1px white;
-  font-size: 30px;
+  font-size: 80px;
   font-style: normal;
   margin-top: 0;
   margin-bottom: 0;
-  text-align: center;
+  text-align: left;
 }
 
 /* font used for dropdown menu - edit this*/
@@ -53,7 +53,8 @@ h4 {
 
 /* font used for byline in header - edit this */
 h5 {
-  font-size: 15px;
+  font-family: 60s Typewriter, monospace;
+  font-size: 25px;
   text-align: right;
 }
 
@@ -107,17 +108,16 @@ h5 {
 
 /* Style the card for text messages */
 .cardText {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  background-image: url("./img/txt-msg.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  padding: 20px;
-  padding-top: 110px;
-  padding-bottom: 450px;
-  line-height: 0.8em;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  background: white url("./img/txt-msg.png") no-repeat top center / contain;
+
+  padding: 110px 20px 20px;
+  min-height: 450px;
+
   border-radius: 10px;
-  background-color: white;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.4;
+
+  font-family: system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
 }
 
 /* Style the card for the dropdown function */
