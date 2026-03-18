@@ -164,7 +164,7 @@ const subjects =
       ","
     ),
   objects =
-    "the Ezymart, the crowd of students, the barramundi, dignity, an urban hellscape, the swamp of reflection, adrenochrome, the positive therapist".split(
+    "in the Ezymart, the crowd of students, the barramundi, dignity, an urban hellscape, the swamp of reflection, adrenochrome, the positive therapist".split(
       ","
     );
 // set up the counter
