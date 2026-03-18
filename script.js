@@ -156,15 +156,15 @@ textInput.addEventListener("input", changeText);
 //start of code for poem
 
 const subjects =
-    "splinters of glass,dust,Kevin,resentful faces,damp socks,a real ninja,a bloated truckie, ".split(
+    "splinters of glass, dust, Kevin, resentful faces, damp socks, a real ninja, a bloated truckie,".split(
       ","
     ),
   verbs =
-    "ambles,yell obscenities,draws,fumbles in shame,injects,floats over,rolls in,spits on,".split(
+    "ambles, yell obscenities, draws, fumbles in shame, injects, floats over, rolls in, spits on,".split(
       ","
     ),
   objects =
-    "the Ezymart,the crowd of students,the barramundi,dignity,an urban hellscape,the swamp of reflection,adrenochrome, the toxicly positive therapist".split(
+    "the Ezymart, the crowd of students, the barramundi, dignity, an urban hellscape, the swamp of reflection, adrenochrome, the positive therapist".split(
       ","
     );
 // set up the counter
