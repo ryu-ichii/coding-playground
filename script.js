@@ -41,16 +41,20 @@ function addText(content) {
 //think about what use you might have for a dropdown menu: you could have someone select their 'mood' and give them an appropriate song, a bit of good or bad advice, an emoji, etc.
 function dropdownFun() {
   var x = document.getElementById("subject").value;
-  if (x === "flighty") {
-    addText("🛩️🐦🦅🦋🌪️💭");
-  } else if (x === "vague") {
-    addText("🥱👽🐙🪼🌘");
-  } else if (x === "joyful") {
-    addText("😀😍😸👾👻🕺");
-  } else if (x === "cloudy") {
-    addText("🌦️🌨️🫧🌫️☔⚡🥶");
-  } else if (x === "hangry") {
-    addText("🍟🥨🌮🥗🍱");
+  if (x === "stupid") {
+    addText("Dextroamphetamine sulfate, 5mg tablet, 4 times a day");
+  } else if (x === "violent") {
+    addText("Zopiclone tartrate, 10mg tablet, 2 times a day");
+  } else if (x === "miserable") {
+    addText("Escitalopram oxalate, 10mg tablet, 1 time a day");
+  } else if (x === "hopeful") {
+    addText("Not sure why you would feel this way.");
+  } else if (x === "puzzled") {
+    addText("Lorazepam, 2mg tablet, 3 times a day");
+  } else if (x === "the walls are closing in") {
+    addText("Quetiapine fumurate, 100mg tablet, 2 times a day");
+  } else if (x === "content") {
+    addText("Get real.");
   }
 }
 //end of dropdown function
