@@ -12,14 +12,14 @@ var speed = 50;
 
 //function for network error message
 const sent1 = [
-  "Your device is not connected.",
-  "Make sure '[—]' is turned on and in range.",
-  "Now discoverable as '[—]'.",
-  "Connection unsuccessful.",
-  "Your connection is unstable.",
-  "Out of range.",
-  "Unexpected device.",
-  "Bad connection.",
+  "Why would you do that?",
+  "Again, seriously?",
+  "This is intolerable behaviour.",
+  "OK, this is just sad.",
+  "You are a piece of work.",
+  "Pull yourself together.",
+  "Yep, that one did wonders.",
+  "Hmm interesting.",
 ];
 
 const buttonRetry = document.getElementById("button-network");
@@ -160,15 +160,15 @@ textInput.addEventListener("input", changeText);
 //start of code for poem
 
 const subjects =
-    "splinters of glass, dust, Kevin, resentful faces, damp socks, a real ninja, a bloated truckie,".split(
+    "splinters of glass, dust, Kevin, resentful faces, damp socks, a real ninja, a bloated truckie, the agitated divorcee, a YouTuber, ".split(
       ","
     ),
   verbs =
-    "ambles through, yell obscenities, draws, fumbles in shame, injects, floats over, rolls in, spits on,".split(
+    "ambles through, yell obscenities, draws, fumbles in shame, injects, floats over, rolls in, spits on, waltz over, snorts,".split(
       ","
     ),
   objects =
-    "in the Ezymart, the crowd of students, the barramundi, dignity, an urban hellscape, the swamp of reflection, adrenochrome, the positive therapist".split(
+    "in the Ezymart, the crowd of students, the barramundi, dignity, an urban hellscape, the swamp of reflection, adrenochrome, the positive therapist, the magical cigarette".split(
       ","
     );
 // set up the counter
