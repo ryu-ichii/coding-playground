@@ -160,7 +160,7 @@ const subjects =
       ","
     ),
   verbs =
-    "ambles, yell obscenities, draws, fumbles in shame, injects, floats over, rolls in, spits on,".split(
+    "ambles through, yell obscenities, draws, fumbles in shame, injects, floats over, rolls in, spits on,".split(
       ","
     ),
   objects =
