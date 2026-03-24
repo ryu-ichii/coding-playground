@@ -1,49 +1,44 @@
-/* to make comments on the style sheet you need to enclose them within asterisks and slashes like this - comments are useful to remind you what each line of code is for*/
-
-/* style body font - this is the default font if you don't specify a font using one of the header labels (h1, h2, h3, h4)*/
+/* Base body styles */
 body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 12px;
-  margin: 2em;
+  margin: 0; /* FIXED: allows full screen layouts */
+
   background: #cbf1e4;
   background-image: linear-gradient(
-   180deg,
-  #00e5ff 0%,
-  #0d0080 50%,
-  #cbf1e4 100%
+    180deg,
+    #00e5ff 0%,
+    #0d0080 50%,
+    #cbf1e4 100%
   );
   background-size: cover;
+  background-attachment: fixed; /* Keeps gradient still while scrolling */
 }
 
+/* Headings */
 h1 {
-  font-family: "Noto", sans-serif;
+  font-family: "Noto Sans JP", sans-serif;
   text-shadow: 1px 1px white;
   font-size: 80px;
-  font-style: normal;
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0;
   text-align: left;
 }
 
-/* font used for dropdown menu - edit this*/
 h2 {
   font-family: "Google Sans Code", cursive;
   text-shadow: 1px 1px white;
   font-size: 30px;
   font-weight: bold;
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0;
   text-align: center;
 }
 
-/* header for error code Retry */
 h3 {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: black;
   text-align: center;
 }
 
-/* font used for title of haiku - edit this */
 h4 {
   font-family: "Zen Dots", cursive;
   font-size: 22px;
@@ -51,184 +46,167 @@ h4 {
   text-align: center;
 }
 
-/* font used for byline in header - edit this */
 h5 {
-  font-family: 60s Typewriter, monospace;
+  font-family: monospace;
   font-size: 25px;
   text-align: right;
 }
 
-.rotate-text {
-  transform: rotate(45deg);
-  display: inline-block;
-}
-
-/* Style the card for the header/title card */
+/* Title card (FULL SCREEN FIX) */
 .cardTitle {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  padding: 16px;
-  border-radius: 10px;
-  background-image: url("./img/clouds.jpg");
+  height: 25vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* move content toward top */
+  align-items: center;
+  padding-top: 20px;
+
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  border-radius: 0px;
+
+  background-image: url("./img/135cc66d-d21f-4b38-be24-62e850b37e98.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+
   text-align: center;
   font-family: "PT Serif", serif;
   font-size: 1.5em;
 }
 
-/* Style the card for phone error alerts (do not edit)*/
-.cardError {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  padding: 5px 3px 15px 3px;
-  line-height: 1em;
-  margin: 0 auto;
-  margin-bottom: 20px;
-  width: 200px;
-  border-radius: 10px;
-  background-color: white;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: black;
+/* Style the card for phone error alerts (do not edit)*/ 
+.cardError { 
+  position: fixed; 
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); 
+  padding: 10px; 
+  line-height: 1em; 
+  width: 200px; 
+  border-radius: 10px; 
+  background-color: white; 
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
+  color: black; 
 }
 
-/* Style the card for notes sections */
+/* Style the card for the search results */ 
+.cardSearch { 
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); 
+  padding: 20px; 
+  margin: 0; 
+  min-height: 375px; 
+  border-radius: 10px; 
+  text-align: left; 
+  background-color: white; 
+}
+
+/* Notes card */
 .cardNotes {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  padding: 60px 20px 40px 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  padding: 60px 20px 40px;
   border-radius: 10px;
-  text-align: left;
-  background-color: white;
-  background-image: url("./img/notes-bg-black.png");
-  background-size: cover;
-  background-repeat: no-repeat;
+  background: url("./img/notes-bg-black.png") no-repeat center/cover;
   min-height: 375px;
   color: white;
   font-family: "Source Code Pro", monospace;
-  font-size: 12px;
 }
 
-/* Style the card for text messages */
+/* TEXT MESSAGE CARD (FIXED) */
 .cardText {
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
   background: white url("./img/txt-msg.png") no-repeat top center / contain;
-
   padding: 110px 20px 20px;
   min-height: 450px;
-
   border-radius: 10px;
   line-height: 1.4;
-
   font-family: system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
 }
 
-/* Style the card for the dropdown function */
+/* BUBBLES (FIXED + ALIGNED) */
+.bubble {
+  background: #e5e5ea;
+  padding: 10px 14px;
+  border-radius: 20px;
+  margin: 6px 0;
+  max-width: 70%;
+  align-self: flex-start;
+}
+
+.bubble--alt {
+  background: #007aff;
+  color: white;
+  align-self: flex-end;
+}
+
+/* Dropdown card */
 .cardDropdown {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  padding: 10px;
-  padding-bottom: 80px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  padding: 20px;
   min-height: 375px;
   border-radius: 10px;
   text-align: center;
-  background-color: white;
-  background-image: url("./img/pres1gnv.jpg");
-  background-position: center;
-  background-size: cover;
+  background: url("./img/pres1gnv.jpg") center/cover;
   font-size: 28px;
   font-family: "Playball", cursive;
 }
 
-/* Style the card for the haiku function */
+/* Haiku card */
 .cardHaiku {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  padding: 20px;
   min-height: 375px;
   border-radius: 10px;
   text-align: center;
-  background-color: green;
-  color: white;
+  background: url("./img/bidet.jpg") no-repeat center/cover;
   font-family: "PT Serif", serif;
-  font-size: 14px;
 }
 
-/* Style the card for the search results */
-.cardSearch {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  padding: 10px;
-  margin: 0;
-  min-height: 375px;
-  border-radius: 10px;
-  text-align: left;
-  background-color: white;
-}
-
-/* Style the card for the poem function */
+/* POEM CARD (BIGGER + BETTER) */
 .cardPoem {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  padding: 30px 20px;
   min-height: 375px;
   border-radius: 10px;
+
   text-align: left;
   background-color: #700013;
   color: #cfd911;
+
   font-family: "Source Code Pro", monospace;
-  font-size: 14px;
+  font-size: 22px;
+  line-height: 1.6;
 }
 
-/* style button for remixing the haiku*/
+/* Buttons */
 .buttonHaiku {
   border-radius: 8px;
-  color: #000000;
-  background-color: white;
+  background: white;
   font-family: "PT Serif", serif;
-  font-size: 12px;
   margin: 15px;
+  cursor: pointer;
 }
 
-/* style button for Network Error */
 .buttonNetwork {
   cursor: pointer;
   color: blue;
   background: white;
-  border: white;
+  border: none;
   font-size: 16px;
-  text-align: center;
-  line-height: 1.1em;
-  position: relative;
-  padding-left: 75px;
+  padding-left: 10px;
 }
 
-/* column layouts */
-.column {
-  float: left;
-  width: 25%;
-  padding: 0 6px;
-}
-
-.columnS {
-  float: left;
-  width: 20%;
-  padding: 0 6px;
-}
-
-.columnL {
-  float: left;
-  width: 33%;
-  padding: 0 6px;
-}
-
-.columnXl {
-  float: left;
-  width: 50%;
-  padding: 0 6px;
-}
-
-.column-wide {
-  float: left;
-  width: 66%;
-  padding: 0 6px;
-}
+/* Layout columns */
+.column { float: left; width: 25%; padding: 0 10px; }
+.columnS { float: left; width: 20%; padding: 0 10px; }
+.columnL { float: left; width: 33.33%; padding: 0 10px; }
+.columnXl { float: left; width: 50%; padding: 0 10px; }
+.column-wide { float: left; width: 66.66%; padding: 0 10px; }
 
 .row {
-  margin: 0 -5px;
+  margin: 20px 0;
   padding-bottom: 20px;
 }
 
@@ -238,57 +216,38 @@ h5 {
   clear: both;
 }
 
-.center {
-  text-align: center;
-}
-
+/* General */
 p {
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0;
 }
 
 * {
   box-sizing: border-box;
 }
 
-.glow {
-  text-shadow: rgba(17,13,140,0.9) 0px 0px 36px;
+.center {
+  text-align: center;
 }
-
-/* link styles */
-a:link {text-decoration:none;color:blue;}
-a:visited {text-decoration:none;color:purple;}
-a:hover {text-decoration:underline;color:darkorange;}
-a:active {text-decoration:underline;color:red;}
-
-.cardPoem a {color:white;text-decoration:none;}
-.cardPoem a:visited {color:white;}
-.cardPoem a:hover {color:#dcdcdc;}
-.cardPoem a:active {color:#bfbfbf;}
 
 img {
-  max-width:100%;
-  max-height:100%;
-  display:block;
+  max-width: 100%;
+  display: block;
 }
 
-.text-box {
-  max-width:100%;
-  max-height:100%;
-  display:block;
-}
-
-/* Responsive layout */
-@media screen and (max-width:600px){
-  .column,.column-wide,.columnS,.columnL,.columnXl{
-    width:100%;
-    display:block;
-    margin-bottom:20px;
+/* Responsive */
+@media screen and (max-width:800px){
+  .column,
+  .column-wide,
+  .columnS,
+  .columnL,
+  .columnXl {
+    width: 100% !important;
+    display: block;
+    margin-bottom: 20px;
   }
 }
 
-/* end bubble code */
-
+/* Poem spacing fix */
 #poem > div {
   min-height: 1.2em;
 }
