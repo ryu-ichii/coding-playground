@@ -66,8 +66,8 @@ const fiveSyllables = [
   "this bullshit blunt knife",
   "how quiet tonight",
   "morally confused",
-  "fucked off and alone",
-  "i am so hungry",
+  "fucked off while shitting",
+  "it sits in your bowels",
   "just like a blunt knife",
   "the air feels thicker",
   "in the carnival",
@@ -80,7 +80,7 @@ const sevenSyllables = [
   "nothing but a cracked bucket",
   "fan blowing hot air around",
   "release the shackles of hope",
-  "junctures of lucidity"
+  "junctures of lucidity",
   "in the air of our cities",
   "questionability sits",
 ];
