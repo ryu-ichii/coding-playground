@@ -64,20 +64,25 @@ function dropdownFun() {
 const fiveSyllables = [
   "micky China white",
   "this bullshit blunt knife",
-  "pizza is a dream",
+  "how quiet tonight",
   "morally confused",
-  "parmesean is life",
+  "fucked off and alone",
   "i am so hungry",
-  "where did odie go",
-  "get it your damn self",
-  "obey me human",
+  "just like a blunt knife",
+  "the air feels thicker",
+  "in the carnival",
+  "cracked rooms and carpets", 
+
 ];
 const sevenSyllables = [
   "I dont trust coincidence",
   "I am a putrid human",
   "nothing but a cracked bucket",
   "fan blowing hot air around",
-  "yuk, no i don't want salad",
+  "release the shackles of hope",
+  "junctures of lucidity"
+  "in the air of our cities",
+  "questionability sits",
 ];
 //code for haiku function (do not edit)
 const buttonHaiku = document.getElementById("button-haiku");
@@ -164,7 +169,7 @@ const subjects =
       ","
     ),
   verbs =
-    "ambles through, yell obscenities, draws, fumbles in shame, injects, floats over, rolls in, spits on, waltz over, snorts,".split(
+    "ambles through, yell obscenities, draws, fumbles in shame, injects, floats over, rolls in, spits on, waltz over, sniffs up, rubs against".split(
       ","
     ),
   objects =
