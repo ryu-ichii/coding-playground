@@ -115,7 +115,7 @@ h5 {
 /* TEXT MESSAGE CARD (FIXED) */
 .cardText {
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-  background: white url("./img/txt-msg.png") no-repeat top center / contain;
+  background: rgb(0, 0, 0) no-repeat top center / contain;
   padding: 110px 20px 20px;
   min-height: 450px;
   border-radius: 10px;
@@ -153,15 +153,32 @@ h5 {
   font-family: "Playball", cursive;
 }
 
-/* Haiku card */
 .cardHaiku {
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-  padding: 20px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+  padding: 25px 20px;
   min-height: 375px;
-  border-radius: 10px;
+  border-radius: 16px;
+
   text-align: center;
-  background: url("./img/bidet.jpg") no-repeat center/cover;
   font-family: "PT Serif", serif;
+  font-size: 20px;
+  line-height: 1.6;
+
+  color: white;
+
+  /* Gradient overlay built-in (no pseudo element!) */
+  background: linear-gradient(
+      rgba(0,0,0,0.4),
+      rgba(0,0,0,0.6)
+    ),
+    url("./img/p-91110393-got-2-go-nyc.jpg") no-repeat center/cover;
+
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.cardHaiku:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 22px rgba(0,0,0,0.25);
 }
 
 /* POEM CARD (BIGGER + BETTER) */
