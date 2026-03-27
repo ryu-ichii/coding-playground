@@ -40,14 +40,14 @@ h3 {
 }
 
 h4 {
-  font-family: "Zen Dots", cursive;
-  font-size: 22px;
+  font-family: "Instrument Serif", serif;
+  font-size: 40px;
   font-weight: bold;
   text-align: center;
 }
 
 h5 {
-  font-family: monospace;
+  font-family: "DM Mono", monospace;
   font-size: 25px;
   text-align: right;
 }
@@ -103,12 +103,13 @@ h5 {
 
 /* Notes card */
 .cardNotes {
+  text-align: right;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
   padding: 60px 20px 40px;
   border-radius: 10px;
-  background: url("./img/notes-bg-black.png") no-repeat center/cover;
+  background: url("./img/linedblank.jpg") no-repeat center/cover;
   min-height: 375px;
-  color: white;
+  color: rgb(0, 0, 0);
   font-family: "Source Code Pro", monospace;
 }
 
@@ -160,7 +161,7 @@ h5 {
   border-radius: 16px;
 
   text-align: center;
-  font-family: "PT Serif", serif;
+  font-family: "DM Mono", serif;
   font-size: 20px;
   line-height: 1.6;
 
